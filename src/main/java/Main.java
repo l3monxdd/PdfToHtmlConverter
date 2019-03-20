@@ -11,16 +11,23 @@ import java.io.Writer;
 public class Main {
     public static void main(String[] args) {
 
-        try {
-            PDDocument pdf = PDDocument.load(new File("/Users/ab/Desktop/test.pdf"));
-            Writer output = new PrintWriter("/Users/ab/Desktop/test.html", "utf-8");
-            new PDFDomTree().writeText(pdf, output);
-            output.close();
-        } catch (IOException ex) {
-            System.err.println(ex.getMessage());
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            PDDocument pdf = PDDocument.load(new File("/Users/ab/Desktop/test.pdf"));
+//            Writer output = new PrintWriter("/Users/ab/Desktop/test.html", "utf-8");
+//            new PDFDomTree().writeText(pdf, output);
+//            output.close();
+//        } catch (IOException ex) {
+//            System.err.println(ex.getMessage());
+//        } catch (ParserConfigurationException e) {
+//            e.printStackTrace();
+//        }
+
+        //PDF to HTML Converter
+        PDFToHTMLConverter pdfToHTMLConverter = new PDFToHTMLConverter();
+
+        pdfToHTMLConverter.pdfConverter("./src/main/java/test.pdf",
+                "./src/main/java/destination/");
+        //
 
     }
 }
