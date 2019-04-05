@@ -25,9 +25,9 @@ public class Main {
         //PDF to HTML Converter
         PDFToHTMLConverter pdfToHTMLConverter = new PDFToHTMLConverter();
 
-        pdfToHTMLConverter.pdfConverter("./src/main/java/test.pdf",
-                "./src/main/java/destination/");
-        //
+        pdfToHTMLConverter.pdfConverter("/Users/ab/Documents/Idea/TRANNING/pdf_to_html/src/main/java/stick.pdf",
+                "/Users/ab/Documents/Idea/TRANNING/pdf_to_html/src/main/java/destination/");
+
 
     }
 }
